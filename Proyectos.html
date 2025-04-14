@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyectos - Portafolio de Kevin</title>
+	<meta name="description"
+		content="Proyectos personales de Kevin Olivella. Detalles y previsualizaciones de mis trabajos.">
+	
+	<link rel="icon" href="img/pc.ico" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		// Comportamiento básico del acordeón para mostrar/ocultar imágenes.
+		document.addEventListener("DOMContentLoaded", () => {
+			const headers = document.querySelectorAll(".accordion-header");
+			headers.forEach(header => {
+				header.addEventListener("click", () => {
+					const content = header.nextElementSibling;
+					content.classList.toggle("hidden");
+				});
+			});
+		});
+	</script>
+</head>
+
+<body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
+	<!-- Encabezado -->
+	<header class="bg-gray-900 py-6 shadow">
+		<div class="container mx-auto text-center">
+			<h1 class="text-3xl font-bold">Bienvenidos al sitio web de Kevin</h1>
+		</div>
+	</header>
+
+	<!-- Navegación -->
+	<nav class="bg-violet-500 text-black py-4">
+		<div class="container mx-auto">
+			<ul class="flex justify-center space-x-6 font-semibold">
+				<li><a href="index.html" class="hover:underline">Inicio</a></li>
+				<li><a href="/contacto.html" class="hover:underline">Contacto</a></li>
+				<li><a href="Bibliografía.html" class="hover:underline">Bibliografía</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<main class="flex-1 container mx-auto px-6 py-10">
+
+
+		<section class="mb-10">
+			<h2 class="text-2xl font-bold text-violet-500">Proyectos personales</h2>
+			<p class="mt-4">
+				Durante mi etapa de estudio, he desarrollado proyectos personales y en equipo que me han permitido
+				profundizar en mi pasión. A continuación, te presento algunos de mis trabajos:
+			</p>
+			<br>
+			<div class="grid gap-6">
+				<li class="text-violet-400 hover:underline font-semibold">Proyectos con HTML, CSS y JS. Usando librerías
+					como tailwindcss y Bootstrap:</li>
+
+
+				<ul class="list-decimal ml-6 mt-4 space-y-1">
+					<li>
+						<a href="https://administraplus.netlify.app" target="_blank"
+							class="text-violet-400 hover:underline font-semibold">
+							AdministraPlus
+						</a>
+					</li>
+					<li>
+						<a href="https://kevolive.github.io/web_course/" target="_blank"
+							class="text-violet-400 hover:underline font-semibold">
+							El tío programador
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/watch?v=jLi8Sjw9K2o" target="_blank"
+							class="text-violet-400 hover:underline font-semibold">
+							Video: Explicación de un ejercicio en Java
+						</a>
+					</li>
+				</ul>
+
+
+		</section>
+
+		<!-- Tarjetas de proyectos -->
+		<section class="grid md:grid-cols-3 gap-6">
+			<!-- AdministraPlus -->
+			<div
+				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+				<div>
+					<h3 class="text-xl font-bold text-violet-500 mb-2">AdministraPlus</h3>
+					<p class="text-gray-300">Aplicación web para la gestión de tareas y proyectos. Desarrollada con
+						HTML, JS y CSS.</p>
+				</div>
+				<a href="https://administraplus.netlify.app" target="_blank"
+					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+					Ver Proyecto
+				</a>
+			</div>
+
+			<!-- El tío programador -->
+			<div
+				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+				<div>
+					<h3 class="text-xl font-bold text-violet-500 mb-2">El tío programador</h3>
+					<p class="text-gray-300">Una muestra de la aplicación web "El tío programador". Haz clic en el botón
+						para ver más detalles.</p>
+				</div>
+				<a href="https://kevolive.github.io/web_course/" target="_blank"
+					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+					Ver Proyecto
+				</a>
+			</div>
+
+			<!-- Video Java -->
+			<div
+				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+				<div>
+					<h3 class="text-xl font-bold text-violet-500 mb-2">Video en Java</h3>
+					<p class="text-gray-300">Video explicativo de un ejercicio práctico en Java, publicado en YouTube.
+					</p>
+				</div>
+				<a href="https://www.youtube.com/watch?v=jLi8Sjw9K2o" target="_blank"
+					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+					Ver Video
+				</a>
+			</div>
+		</section>
+		</div>
+		<br>
+		<br>
+
+		<!-- Segunda seccion de proyectos con Angular -->
+		<div class="grid gap-6">
+			<li class="text-violet-400  font-semibold">Proyectos realizados con Angular, usando librerías como DaisyUI,
+				tailwindcss, Angular Material y PrimeNG:</li>
+
+
+			<ul class="list-decimal ml-6 mt-4 space-y-1">
+				<li>
+					<a href="https://angularappcountry.netlify.app/" target="_blank"
+						class="text-violet-400 hover:underline font-semibold">
+						Angular: App_Paises
+					</a>
+				</li>
+				<li>
+					<a href="https://angularappusuarios.netlify.app/inicio" target="_blank" class="text-violet-400 hover:underline font-semibold">
+						Angular: App-Usuarios
+					</a>
+				</li>
+				<li>
+					<a href="xxxxxxxx" target="_blank" class="text-violet-400 hover:underline font-semibold">
+						xxxxx
+					</a>
+				</li>
+			</ul>
+
+
+			</section>
+
+			<!-- Tarjetas de proyectos -->
+			<section class="grid md:grid-cols-3 gap-6">
+				<!-- App paises -->
+
+				<div
+					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+					<div>
+						<h3 class="text-xl font-bold text-violet-500 mb-2">App_Paises</h3>
+						<p class="text-gray-300">Aplicación SPA desarrollada en Angular que permite buscar información
+							de países en tiempo real mediante consultas personalizadas. Usé DaisyUI y Tailwind para los
+							estilos.
+						<ol>
+							<li>Angular 19</li>
+							<li>TypeScript</li>
+							<li>HTML & SCSS</li>
+							<li>TailwindCSS</li>
+							<li>DaisyUI</li>
+							<li>Consumo de API REST</li>
+							<li>Responsive Design</li>
+							<li>Local Storage</li>
+							<li>Otros...</li>
+
+						</ol>
+						</p>
+					</div>
+					<a href="https://angularappcountry.netlify.app/" target="_blank"
+						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+						Ver Proyecto
+					</a>
+				</div>
+
+				<!-- El tío programador -->
+				<div
+					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+					<div>
+						<h3 class="text-xl font-bold text-violet-500 mb-2">App-Usuarios</h3>
+						<p class="text-gray-300">UAplicación SPA desarrollada con Angular 17 con módulos (No standalone) y Angular Material para
+							gestionar usuarios. Permite visualizar, crear, editar y eliminar registros mediante una
+							interfaz moderna y responsive.
+
+						<ol>
+							<li>Angular 17</li>
+							<li>Angular Material</li>
+							<li>TypeScript</li>
+							<li>HTML & SCSS</li>
+							<li>Responsive Design</li>
+							<li>Consumo de servicios simulados (puede ser JSON server o servicio local, si aplica)</li>
+						</ol>
+
+						</p>
+					</div>
+					<a href="https://angularappusuarios.netlify.app/inicio" target="_blank"
+						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+						Ver Proyecto
+					</a>
+				</div>
+
+				<!-- Video Java -->
+				<div
+					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
+					<div>
+						<h3 class="text-xl font-bold text-violet-500 mb-2">xxxx</h3>
+						<p class="text-gray-300">xxxx.</p>
+					</div>
+					<a href="xxx" target="_blank"
+						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
+						Ver Video
+					</a>
+				</div>
+			</section>
+		</div>
+	</main>
+
+
+	<!-- Footer -->
+	<footer class="bg-gray-900 text-white text-center py-4">
+		<p class="text-sm">Created by: Kevin Olivella</p>
+		<p class="text-sm">Correo: <a href="mailto:Kevinolivella@gmail.com"
+				class="text-violet-400 hover:underline">Kevinolivella@gmail.com</a></p>
+	</footer>
+</body>
+
+</html>
