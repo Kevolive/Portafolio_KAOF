@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Básico</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Contacto - Portafolio de Kevin</title>
+    <link rel="icon" href="img/pc.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-	<form>
-		<label for="Idioma" class="idioma">Idioma</label>
-	<select name="Idioma" id="Idioma">
-		<option>Español</option>
-		<option>Inglés</option>
-			</select>
-	
-</form>
-	 <header>
-	<div class="titulo"><h1>Bienvenidos al sitio web de Kevin</h1></div> </header>
-		<nav>
-		<ul>
-		<b><li><a href="index.html">Inicio</a></li></b>
-		<b><li><a href="Videos.html">Videos</a></li></b>
-		<b><li><a href="/Mi sitio web/Proyectos.html">Proyectos personales</a></li></b>
-		<b><li><a href="Bibliografía.html">Bibliografía</a></li></b>
-		
-</ul> 
-	 
-</nav>
-	<br> <br>
-	<div class="principal"><h2 >Hola, a continuación llena este formulario para contactarte:</h2> </div>
-	<main>
-    <div class="form-container">
-        <form id="basic-form">
-            <h2>Formulario de Registro</h2>
-            <label for="name" class="formulario">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email" class="formulario">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password" class="formulario">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</main>
+
+<body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
+    <!-- Encabezado -->
+    <header class="bg-gray-900 fixed w-full z-10 shadow h-16">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-violet-400">Kevin Olivella</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm md:text-base font-medium">
+                    <li><a href="/index.html" class="hover:text-violet-300">Inicio</a></li>
+                    <li><a href="/Proyectos.html" class="hover:text-violet-300">Proyectos</a></li>
+                    <li><a href="/contacto.html" class="hover:text-violet-300">Contacto</a></li>
+                    <li><a href="/Bibliografía.html" class="hover:text-violet-300">Bibliografía</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="flex-1 container mx-auto px-6 pt-28 pb-10">
+        <section class="max-w-xl mx-auto bg-gray-800 p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold text-violet-500 mb-4">Formulario de Contacto</h2>
+            <form id="basic-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300">Nombre:</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500" required>
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-300">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500" required>
+                </div>
+                <button type="submit" class="w-full bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded transition">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p class="text-sm">Created by: Kevin Olivella</p>
+        <p>© 2025 Kevin Olivella. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="scripts.js"></script>
-	<footer> Created by: Kevin olivella
-		<address>
-			
-			Correo: Kevinolivella@gmail.com
-		</address>
-	</footer>
 </body>
+
 </html>
