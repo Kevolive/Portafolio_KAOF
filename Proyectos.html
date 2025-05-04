@@ -2,240 +2,181 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyectos - Portafolio de Kevin</title>
-	<meta name="description"
-		content="Proyectos personales de Kevin Olivella. Detalles y previsualizaciones de mis trabajos.">
-	
-	<link rel="icon" href="img/pc.ico" />
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-		// Comportamiento básico del acordeón para mostrar/ocultar imágenes.
-		document.addEventListener("DOMContentLoaded", () => {
-			const headers = document.querySelectorAll(".accordion-header");
-			headers.forEach(header => {
-				header.addEventListener("click", () => {
-					const content = header.nextElementSibling;
-					content.classList.toggle("hidden");
-				});
-			});
-		});
-	</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Portafolio de Kevin</title>
+    <meta name="description"
+        content="Proyectos personales de Kevin Olivella. Detalles y previsualizaciones de mis trabajos.">
+
+    <link rel="icon" href="img/pc.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
-	<!-- Encabezado -->
-	<header class="bg-gray-900 fixed w-full z-10 shadow h-16">
-		<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-		  <h1 class="text-xl font-bold text-violet-400">Kevin Olivella</h1>
-		  <nav>
-			<ul class="flex space-x-6 text-sm md:text-base font-medium">
-			  <li><a href="/index.html" class="hover:text-violet-300">Inicio</a></li>
-			  <li><a href="/Proyectos.html" class="hover:text-violet-300">Proyectos</a></li>
-			  <li><a href="/contacto.html" class="hover:text-violet-300">Contacto</a></li>
-			  <li><a href="/Bibliografía.html" class="hover:text-violet-300">Bibliografía</a></li>
-			</ul>
-		  </nav>
-		</div>
-	  </header>
+    <!-- Encabezado -->
+    <header class="bg-gray-900 fixed w-full z-10 shadow h-16">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-violet-400">Kevin Olivella</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm md:text-base font-medium">
+                    <li><a href="/index.html" class="hover:text-violet-300">Inicio</a></li>
+                    <li><a href="/Proyectos.html" class="hover:text-violet-300">Proyectos</a></li>
+                    <li><a href="/contacto.html" class="hover:text-violet-300">Contacto</a></li>
+                    <li><a href="/Bibliografía.html" class="hover:text-violet-300">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 container mx-auto px-6 pt-28 pb-10">
+
+        <main class="flex-1 container mx-auto px-6 pt-28 pb-10">
+            <!-- Introducción -->
+            <section class="text-center mb-12" data-aos="fade-up">
+                <h1 class="text-4xl font-bold text-violet-400 mb-4">Mis Proyectos</h1>
+                <p class="text-lg text-gray-300">
+                    Bienvenido a mi portafolio de proyectos. Aquí encontrarás una selección de aplicaciones y soluciones que he desarrollado, 
+                    utilizando tecnologías modernas como <span class="text-violet-400 font-semibold">Angular</span>, 
+                    <span class="text-violet-400 font-semibold">Python</span>, y <span class="text-violet-400 font-semibold">JavaScript</span>. 
+                    Cada proyecto refleja mi pasión por la programación y mi compromiso con la calidad.
+                </p>
+                <p class="text-lg text-gray-300 mt-4">
+                    Explora los detalles de cada proyecto y descubre cómo he aplicado mis habilidades para resolver problemas y crear experiencias interactivas.
+                </p>
+            </section>
+        </main>
+
+        <!-- Tarjetas de proyectos -->
+        <section class="grid md:grid-cols-3 gap-6">
+            <!-- AdministraPlus -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                data-aos="zoom-in" data-aos-delay="150">
+
+                <div>
+                    <img src="img/administraPlus.jpg" alt="Captura de AdministraPlus" class="rounded-xl mb-4 shadow-lg">
+                    <h4 class="text-xl font-bold text-violet-300 mb-2">AdministraPlus</h4>
+                    <p class="text-gray-300 text-sm mb-4">Aplicación web para gestionar ingresos y egresos. Tecnologías:
+                        HTML, CSS, JS.</p>
+                </div>
+
+                <a href="https://administraplus.netlify.app" target="_blank"
+                    class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">
+                    Ver más
+                </a>
+            </div>
 
 
-	<main class="flex-1 container mx-auto px-6 pt-28 pb-10">
+
+            <!-- El tío programador -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                data-aos="zoom-in" data-aos-delay="150">
+                <div>
+
+                    <img src="img/elTioProg.jpg" alt="El tio Programador" class="rounded-xl mb-4 shadow-lg">
+                    <h4 class="text-xl font-bold text-violet-300 mb-2">El tío programador</h4>
+                    <p class="text-gray-300 text-sm mb-4">Aplicación web "El tío programador". Desarrollada con HTML,
+                        CSS y
+                        JS</p>
+                </div>
+
+                <a href="https://kevolive.github.io/web_course/" target="_blank"
+                    class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">
+                    Ver más
+                </a>
+            </div>
 
 
-		<section class="mb-10">
-			<h2 class="text-2xl font-bold text-violet-500">Proyectos personales</h2>
-			<p class="mt-4">
-				Durante mi etapa de estudio, he desarrollado proyectos personales y en equipo que me han permitido
-				profundizar en mi pasión. A continuación, te presento algunos de mis trabajos:
-			</p>
-			<br>
-			<div class="grid gap-6">
-				<li class="text-violet-400  font-semibold">Proyectos con HTML, CSS y JS. Usando librerías
-					como tailwindcss y Bootstrap:</li>
+
+            <!-- App_Paises -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+            data-aos="zoom-in" data-aos-delay="150">
+
+            <div>
+                <img src="img/app_paises.jpg" alt="Captura de App_Paises" class="rounded mb-4">
+                <h4 class="text-xl font-bold text-violet-300 mb-2">App_Paises</h4>
+                <p class="text-gray-300 text-sm mb-4">
+                    Aplicación SPA desarrollada en Angular que permite buscar información de países en tiempo real.
+                    Tecnologías: Angular 19, DaisyUI, TailwindCSS, Consumo de API REST.
+                </p>
+            </div>
+                
+                <a href="https://angularappcountry.netlify.app/" target="_blank"
+                class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
+                    más</a>
+            </div>
+
+            <!-- App-Usuarios con Angular Material -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+            data-aos="zoom-in" data-aos-delay="150">
+            <div>
+                <img src="img/app_usuarios.jpg" alt="Captura de App_Usuarios" class="rounded mb-4">
+                <h4 class="text-xl font-bold text-violet-300 mb-2">App-Usuarios</h4>
+                <p class="text-gray-300 text-sm mb-4">
+                    SPA desarrollada con Angular 17 y Angular Material. CRUD de usuarios con servicios simulados. Diseño
+                    responsive.
+                </p>
+            </div>               
+                <a href="https://angularappusuarios.netlify.app/inicio" target="_blank"
+                class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
+                    más</a>
+            </div>
+
+            <!-- App-Usuarios con PrimeNG -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+            data-aos="zoom-in" data-aos-delay="150">
+
+            <div>
+                <img src="img/app-usuarios-png.jpg" alt="Captura de App_Usuarios" class="rounded mb-4">
+                <h4 class="text-xl font-bold text-violet-300 mb-2">App-Usuarios</h4>
+                <p class="text-gray-300 text-sm mb-4">
+                    SPA desarrollada con Angular 17 y PrimeNG. CRUD de usuarios con servicios simulados. El diseño es
+                    responsive también.
+                </p>
+            </div>
+                <a href="https://angularappusuarios-prime.netlify.app/inicio" target="_blank"
+                    class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
+                    más</a>
+            </div>
 
 
-				<ul class="list-decimal ml-6 mt-4 space-y-1">
-					<li>
-						<a href="https://administraplus.netlify.app" target="_blank"
-							class="text-violet-400  font-semibold">
-							AdministraPlus
-						</a>
-					</li>
-					<li>
-						<a href="https://kevolive.github.io/web_course/" target="_blank"
-							class="text-violet-400 hover:underline font-semibold">
-							El tío programador
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/watch?v=jLi8Sjw9K2o" target="_blank"
-							class="text-violet-400 hover:underline font-semibold">
-							Video: Explicación de un ejercicio en Java
-						</a>
-					</li>
-				</ul>
+            <!-- App del proyecto integrador hecho con python -->
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+            data-aos="zoom-in" data-aos-delay="150">
+            <div>
+                <img src="img/Apppython.jpg" alt="Captura de App_Proyecto_Integrador" class="rounded mb-4">
+                <h4 class="text-xl font-bold text-violet-300 mb-2">App del proyecto integrador</h4>
+                <p class="text-gray-300 text-sm mb-4">
+                    Este proyecto es una aplicación interactiva desarrollada con Streamlit para analizar datos de ventas simulados. Utiliza Pandas y NumPy para generar y manipular un DataFrame con información de productos, regiones y fechas. Incluye filtros interactivos, métricas calculadas (ingresos y ventas totales) y visualizaciones como gráficos de barras y líneas. Es ideal para demostrar habilidades en análisis de datos y desarrollo de aplicaciones web en Python.
+                </p>
+            </div>
+            <a href="https://proyecto-integrador-kg2mw7iqyygdvz94pysrmv.streamlit.app/" target="_blank"
+                    class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
+                    más</a>
+            </div>
+                
+               
 
 
-		</section>
+        </section>
+    </main>
 
-		<!-- Tarjetas de proyectos -->
-		<section class="grid md:grid-cols-3 gap-6">
-			<!-- AdministraPlus -->
-			<div
-				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-				<div>
-					<h3 class="text-xl font-bold text-violet-500 mb-2">AdministraPlus</h3>
-					<p class="text-gray-300">Aplicación web para la gestión de tareas y proyectos. Desarrollada con
-						HTML, JS y CSS.</p>
-				</div>
-				<a href="https://administraplus.netlify.app" target="_blank"
-					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-					Ver Proyecto
-				</a>
-			</div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p class="text-sm">Created by: Kevin Olivella</p>
+        <p>© 2025 Kevin Olivella.</p>
+    </footer>
 
-			<!-- El tío programador -->
-			<div
-				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-				<div>
-					<h3 class="text-xl font-bold text-violet-500 mb-2">El tío programador</h3>
-					<p class="text-gray-300">Una muestra de la aplicación web "El tío programador". Haz clic en el botón
-						para ver más detalles.</p>
-				</div>
-				<a href="https://kevolive.github.io/web_course/" target="_blank"
-					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-					Ver Proyecto
-				</a>
-			</div>
-
-			<!-- Video Java -->
-			<div
-				class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-				<div>
-					<h3 class="text-xl font-bold text-violet-500 mb-2">Video en Java</h3>
-					<p class="text-gray-300">Video explicativo de un ejercicio práctico en Java, publicado en YouTube.
-					</p>
-				</div>
-				<a href="https://www.youtube.com/watch?v=jLi8Sjw9K2o" target="_blank"
-					class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-					Ver Video
-				</a>
-			</div>
-		</section>
-		</div>
-		<br>
-		<br>
-
-		<!-- Segunda seccion de proyectos con Angular -->
-		<div class="grid gap-6">
-			<li class="text-violet-400  font-semibold">Proyectos realizados con Angular, usando librerías como DaisyUI,
-				tailwindcss, Angular Material y PrimeNG:</li>
-
-
-			<ul class="list-decimal ml-6 mt-4 space-y-1">
-				<li>
-					<a href="https://angularappcountry.netlify.app/" target="_blank"
-						class="text-violet-400 hover:underline font-semibold">
-						Angular: App_Paises
-					</a>
-				</li>
-				<li>
-					<a href="https://angularappusuarios.netlify.app/inicio" target="_blank" class="text-violet-400 hover:underline font-semibold">
-						Angular: App-Usuarios
-					</a>
-				</li>
-				<li>
-					<a href="xxxxxxxx" target="_blank" class="text-violet-400 hover:underline font-semibold">
-						xxxxx
-					</a>
-				</li>
-			</ul>
-
-
-			</section>
-
-			<!-- Tarjetas de proyectos -->
-			<section class="grid md:grid-cols-3 gap-6">
-				<!-- App paises -->
-
-				<div
-					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-					<div>
-						<h3 class="text-xl font-bold text-violet-500 mb-2">App_Paises</h3>
-						<p class="text-gray-300">Aplicación SPA desarrollada en Angular que permite buscar información
-							de países en tiempo real mediante consultas personalizadas. Usé DaisyUI y Tailwind para los
-							estilos.
-						<ol>
-							<li>Angular 19</li>
-							<li>TypeScript</li>
-							<li>HTML & SCSS</li>
-							<li>TailwindCSS</li>
-							<li>DaisyUI</li>
-							<li>Consumo de API REST</li>
-							<li>Responsive Design</li>
-							<li>Local Storage</li>
-							<li>Otros...</li>
-
-						</ol>
-						</p>
-					</div>
-					<a href="https://angularappcountry.netlify.app/" target="_blank"
-						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-						Ver Proyecto
-					</a>
-				</div>
-
-				<!-- El tío programador -->
-				<div
-					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-					<div>
-						<h3 class="text-xl font-bold text-violet-500 mb-2">App-Usuarios</h3>
-						<p class="text-gray-300">UAplicación SPA desarrollada con Angular 17 con módulos (No standalone) y Angular Material para
-							gestionar usuarios. Permite visualizar, crear, editar y eliminar registros mediante una
-							interfaz moderna y responsive.
-
-						<ol>
-							<li>Angular 17</li>
-							<li>Angular Material</li>
-							<li>TypeScript</li>
-							<li>HTML & SCSS</li>
-							<li>Responsive Design</li>
-							<li>Consumo de servicios simulados (puede ser JSON server o servicio local, si aplica)</li>
-						</ol>
-
-						</p>
-					</div>
-					<a href="https://angularappusuarios.netlify.app/inicio" target="_blank"
-						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-						Ver Proyecto
-					</a>
-				</div>
-
-				<!-- Video Java -->
-				<div
-					class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between min-h-[300px]">
-					<div>
-						<h3 class="text-xl font-bold text-violet-500 mb-2">xxxx</h3>
-						<p class="text-gray-300">xxxx.</p>
-					</div>
-					<a href="xxx" target="_blank"
-						class="mt-4 bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded text-center transition">
-						Ver Video
-					</a>
-				</div>
-			</section>
-		</div>
-	</main>
-
-
-	<!-- Footer -->
-	<footer class="bg-gray-900 text-white text-center py-4">
-		<p class="text-sm">Created by: Kevin Olivella</p>
-			<p>© 2025 Kevin Olivella. Todos los derechos reservados.
-					</p>
-	</footer>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
