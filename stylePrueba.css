@@ -1,0 +1,104 @@
+/* === Paso 3: Accesibilidad === */
+
+/* Contraste de colores para legibilidad */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #052449;
+    /* fondo oscuro */
+    color: #FFFFFF;
+    /* texto claro */
+    line-height: 1.6;
+}
+
+/* Enlaces con buen contraste */
+a {
+    color: #5FBFF9;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Estados de enfoque para accesibilidad */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #5FBFF9;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Tamaños de fuente accesibles */
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+p,
+li,
+input,
+button {
+    font-size: 1rem;
+    /* mínimo 16px para accesibilidad */
+}
+
+/* Botones accesibles */
+button {
+    background-color: #5FBFF9;
+    color: #052449;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #48a3d8;
+}
+
+button:active {
+    background-color: #2b6d90;
+}
+
+/* Formularios accesibles */
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 2px solid #5FBFF9;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+/* Mejor legibilidad de listas */
+ul,
+ol {
+    margin-left: 1.5rem;
+}
+
+/* Modo reducido de movimiento para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

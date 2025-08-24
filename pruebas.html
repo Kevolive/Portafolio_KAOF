@@ -2,108 +2,518 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Portafolio de Kevin</title>
-    <meta name="description"
-        content="Proyectos personales de Kevin Olivella. Detalles y previsualizaciones de mis trabajos.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Portafolio | Kevin Olivella - Desarrollador Angular">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Portafolio de Kevin</title>
+  <meta name="description"
+    content="Proyectos personales de Kevin Olivella. Detalles y previsualizaciones de mis trabajos.">
 
-    <link rel="icon" href="img/logo2.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="img/logo2.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylePrueba.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
-<body class="bg-gray-950 text-white font-sans">
+<body class="sm:bg-gray-950 text-white font-sans">
 
-    <!-- Navbar -->
-    <header class="bg-gray-900 fixed w-full z-10 shadow">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-violet-400">Kevin  <span class="text-white">Olivella</span></h1>
-            <nav>
-                <ul class="flex space-x-6 text-sm md:text-base font-medium">
-                    <li><a href="/index.html" class="hover:text-violet-300">Inicio</a></li>
-                    <li><a href="/contacto.html" class="hover:text-violet-300">Contacto</a></li>
-                    <li><a href="/Bibliografía.html" class="hover:text-violet-300">Acerca de</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navbar -->
+  <header class="bg-gray-900 fixed w-full z-10 shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-violet-400"> <a href="/index.html">Kevin <span
+            class="text-white">Olivella</span></a></h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm md:text-base font-medium">
 
-    <main class="flex-1 container mx-auto px-6 pt-28 pb-10">
+          <li><a href="#inicio" class="hover:text-violet-300">Inicio</a></li>
+          <li><a href="#proyectos" class="hover:text-violet-300">Proyectos</a></li>
+          <li><a href="#contacto" class="hover:text-violet-300">Contacto</a></li>
+          <li><a href="#acerca" class="hover:text-violet-300">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-        <section id="acerca" class="p-8 bg-[#5FBFF9] text-black rounded-2xl border-white border mt-10">
-  <h2 class="text-3xl font-bold mb-4">Quién soy</h2>
-  <p class="mb-4 leading-relaxed">
-    Mi nombre es <strong>Kevin Alfonso Olivella Felizzola</strong>, nací el 26 de febrero de 1993 en Villanueva, La Guajira. Desde muy joven he sido una persona creativa, con una fuerte inclinación por la tecnología, la lógica y el aprendizaje autodidacta. 
-  </p>
-  <p class="mb-4 leading-relaxed">
-    Con el tiempo, esa curiosidad me llevó a especializarme en desarrollo de software. He adquirido conocimientos sólidos en lenguajes como Java, JavaScript, Python y herramientas modernas como Angular, Spring Boot y bases de datos como MySQL. Actualmente, estudio para ser Técnico en Asistente en Desarrollo de Software, combinando mi formación académica con proyectos personales como este portafolio.
-  </p>
-  <p class="mb-4 leading-relaxed">
-    Este sitio es una ventana a mis habilidades, creatividad y evolución como desarrollador. Cada sección está diseñada para reflejar no solo lo que sé hacer, sino también cómo pienso y cómo abordo los retos del mundo digital.
-  </p>
-  <p class="mb-4 leading-relaxed">
-    Mi objetivo es seguir creciendo, contribuir a proyectos significativos y formar parte de equipos que valoren el compromiso, la innovación y el aprendizaje continuo.
-  </p>
-
-  <div class="mt-10">
-  <h3 class="text-2xl font-semibold text-white mb-6">Mi recorrido</h3>
-  <ol class="relative border-l border-black">
-    <li class="mb-10 ml-6">
-      <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-white">2010 - 2015</time>
-      <h4 class="text-lg font-semibold text-white">Primer contacto con la tecnología</h4>
-      <p class="mb-4 text-gray-100">Desde joven mostré curiosidad por los computadores, desarmar dispositivos y aprender cómo funcionaban.</p>
-    </li>
-    <li class="mb-10 ml-6">
-      <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-white">2022 - 2024</time>
-      <h4 class="text-lg font-semibold text-white">Inicio de formación técnica</h4>
-      <p class="text-gray-100">Comencé mis estudios como Técnico en Asistente en Desarrollo de Software. Me enfoqué en lógica de programación y fundamentos de desarrollo web.</p>
-    </li>
-    <li class="mb-10 ml-6">
-      <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-white">2024 - Presente</time>
-      <h4 class="text-lg font-semibold text-white">Proyectos personales y portafolio</h4>
-      <p class="text-gray-100">He desarrollado proyectos con tecnologías como Java, Angular, Spring Boot y TailwindCSS. Este portafolio es una muestra real de lo que sé y sigo aprendiendo.</p>
-    </li>
-    <li class="ml-6">
-      <div class="absolute w-3 h-3 bg-violet-400 rounded-full -left-1.5 border border-white animate-pulse"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-white">Futuro cercano</time>
-      <h4 class="text-lg font-semibold text-white">Meta: Primer trabajo en tecnología</h4>
-      <p class="text-gray-100">Mi meta es obtener una oportunidad profesional donde pueda aplicar mis conocimientos, seguir aprendiendo y aportar en proyectos reales.</p>
-    </li>
-  </ol>
-</div>
-
-</section>
+  <main class="flex-1 container mx-auto px-6 pt-28 pb-10">
 
 
-       
-  
-  
-            </main>
+    <!-- Hero -->
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-4">
-        <p class="text-sm">Created by: Kevin Olivella</p>
-        <p>© 2025 Kevin Olivella. Todos los derechos reservados.
+    <section id="inicio"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center relative"
+      style="background-image: url('img/papique.jpg');">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <!-- Contenido -->
+      <div class="relative z-10">
+        <h2 class="text-5xl md:text-6xl font-bold text-white mb-4">Hola, soy <span class="text-violet-400">Kevin
+            Olivella</span></h2>
+        <p class="font-bold md:text-2xl text-gray-300 mb-8">
+          Desarrollador de software apasionado por crear soluciones útiles y modernas.
         </p>
-    </footer>
+      </div>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
+
+    </section>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="pt-28 pb-20 text-center px-6 bg-gradient-to-b from-gray-950 to-gray-700"
+      data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Mis Proyectos</h1>
+      <p class="text-lg text-gray-300">
+        Bienvenido a mi portafolio de proyectos. Soy Técnico en Desarrollo de Software, y en este sitio
+        encontrarás
+        una selección de aplicaciones y soluciones que
+        he desarrollado,
+        utilizando tecnologías modernas como <span class="text-violet-400 font-semibold">Angular</span>,
+        <span class="text-violet-400 font-semibold">React</span>,
+        <span class="text-violet-400 font-semibold">Python</span>, <span
+          class="text-violet-400 font-semibold">JavaScript</span>, y <span
+          class="text-violet-400 font-semibold">Typescript</span>, entre otras.
+        Cada proyecto refleja mi pasión por la programación y mi compromiso con la calidad.
+      </p>
+      <p class="text-lg text-gray-300 mt-4">
+        Explora los detalles de cada proyecto y descubre cómo he aplicado mis habilidades para resolver
+        problemas y crear experiencias interactivas.
+      </p>
+    </section>
+    <br>
+    <hr>
+    <br>
+
+
+    <!-- Tarjetas de proyectos -->
+    <section class="grid md:grid-cols-3 gap-6 from-gray-950 to-gray-700">
+
+      <!-- Tienda Virtual -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="img/Tienda-virtual.jpg" alt="Captura-Tienda Virtual" class="p-6 mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">Tienda Virtual - Plataforma de compras con
+            pasarela de pagos</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            Aplicación web Fullstack que simula una tienda en línea con integración real a la pasarela de
+            pagos Wompi (sandbox). Permite a los usuarios visualizar productos, simular pagos con tarjeta, y
+            consultar un historial de transacciones. El frontend está construido con React + Vite +
+            Tailwind, y el backend con NestJS + PostgreSQL, con pruebas automatizadas y despliegue en Render
+            y Vercel.
+            Debido a que usé Renderpara el despliegue del backend en la V gratis, es importante
+            "despertarlo" para que carguenlos registros. Acá está la URL del backend:
+            https://wompi-backend-y2qy.onrender.com. El diseño totalmente responsive, validaciones visuales,
+            y flujo completo de compra.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-4">
+          <a href="https://tiendavirtualprueba.netlify.app/" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow">
+            Ver más
+          </a>
+          <a href="https://github.com/Kevolive/PruebaTiendaVirtual.git" target="_blank"
+            class=" text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- App de mapas en angular -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="img/maps.jpg" alt="Captura-Maps-Angular" class="p-6 mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">Maps Angular</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            Este proyecto es una aplicación web construida con Angular que utiliza Mapbox GL JS para mostrar
+            mapas interactivos. Permite visualizar mapas en pantalla completa, agregar y gestionar
+            marcadores, y mostrar información de casas con mini mapas. Además, integra temas visuales con
+            Tailwind CSS y DaisyUI para una interfaz moderna y adaptable.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-4">
+          <a href="https://mapsangularkevin.netlify.app/#/fullscreen" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+            más</a>
+            <a href="https://github.com/Kevolive/Maps.git" target="_blank"
+            class=" inline-block text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+
+        
+      </div>
+
+      <!-- App_Paises -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+
+        <div>
+          <img src="img/app_paises.jpg" alt="Captura de App_Paises" class="rounded mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">App_Paises</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            Aplicación SPA desarrollada en Angular que permite buscar información de países en tiempo real.
+            Tecnologías: Angular 19, DaisyUI, TailwindCSS, Consumo de API REST.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4">
+          
+          <a href="https://angularappcountry.netlify.app/" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+            más</a>
+            <a href="https://github.com/Kevolive/App_Paises.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- App-Usuarios con Angular Material -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="img/app_usuarios.jpg" alt="Captura de App_Usuarios" class="rounded mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">App-Usuarios</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            SPA desarrollada con Angular 17 y Angular Material. CRUD de usuarios con servicios simulados.
+            Diseño
+            responsive.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4">
+          
+          <a href="https://angularappusuarios.netlify.app/inicio" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
+            más</a>
+            <a href="https://github.com/Kevolive/CrudAngularMaterial.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- App-Usuarios con PrimeNG -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+
+        <div>
+          <img src="img/app-usuarios-png.jpg" alt="Captura de App_Usuarios" class="rounded mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">App-Usuarios</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            SPA desarrollada con Angular 17 y PrimeNG. CRUD de usuarios con servicios simulados. El diseño
+            es
+            responsive también.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4">
+          
+          <a href="https://crudappusuarios.netlify.app/usuarios" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+            más</a>
+            <a href="https://github.com/Kevolive/CrudAngularPrimeNG.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+
+      <!-- App del proyecto integrador hecho con python -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="img/Apppython.jpg" alt="Captura de App_Proyecto_Integrador" class="p-6 mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">App del proyecto integrador</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            Este proyecto es una aplicación interactiva desarrollada con Streamlit para analizar datos de
+            ventas simulados. Utiliza Pandas y NumPy para generar y manipular un DataFrame con información
+            de productos, regiones y fechas. Incluye filtros interactivos, métricas calculadas (ingresos y
+            ventas totales) y visualizaciones como gráficos de barras y líneas. Es ideal para demostrar
+            habilidades en análisis de datos y desarrollo de aplicaciones web en Python.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-4">
+          
+          <a href="https://proyecto-integrador-kg2mw7iqyygdvz94pysrmv.streamlit.app/" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+            más</a>
+            <a href="https://github.com/Kevolive/proyecto-integrador.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- AdministraPlus -->
+      <!-- <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+
+        <div>
+          <img src="img/administraPlus.jpg" alt="Captura de AdministraPlus" class="rounded-xl mb-4 shadow-lg">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">AdministraPlus</h4>
+          <p class="text-gray-300 text-sm mb-4">Aplicación web para gestionar ingresos y egresos. Tecnologías:
+            HTML, CSS, JS.</p>
+        </div>
+
+        <a href="https://administraplus.netlify.app" target="_blank"
+          class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">
+          Ver más
+        </a>
+      </div> -->
+
+
+      <!-- El tío programador -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+
+          <img src="img/elTioProg.jpg" alt="El tio Programador" class="rounded-xl mb-4 shadow-lg">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">El tío programador</h4>
+          <p class="text-gray-300 text-sm mb-4">Aplicación web "El tío programador". Desarrollada con HTML,
+            CSS y
+            JS</p>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4">
+          <a href="https://github.com/Kevolive/elTioProgramador.git" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">
+            Ver más
+          </a>
+          
+            <a href="https://github.com/Kevolive/web_course.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- Siguientes proyectos -->
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="" alt="imagen" class="p-6 mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">Proyecto en construcción:</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            Plataforma de registro de clientes con envío de notificaciones por WhatsApp. Desarrollada con
+            Angular, Nestjs y Twilio (por ahora para pruebas). Permite registrar clientes, enviar
+            notificaciones y consultar su historial
+            de interacciones. El frontend utiliza Angular 19 con DaisyUI y TailwindCSS, mientras que el
+            backend
+            está construido con NestJS y PostgreSQL. Incluye pruebas unitarias y de integración, y está
+            desplegada en Render y netlyfy.
+          </p>
+        </div>
+        
+        <div class="flex items-center gap-4 mt-4">
+            <a href="https://deborasanabriahair.netlify.app/clientes/create" target="_blank"
+              class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+              más</a>
+          
+            <a href="https://github.com/Kevolive/Debora_Hair_CRUD.git" target="_blank"
+            class="  text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-100 py-20 px-6 text-gray-800">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+
+        <!-- Columna Izquierda: Información -->
+        <div>
+          <h3 class="text-4xl font-semibold text-gray-800 mb-6">Contáctame</h3>
+          <p class="text-gray-600 mb-4">¿Quieres colaborar o tienes una propuesta? Acá tienes mi CV; también
+            llena los campos del formulario y te contactaré pronto.</p>
+          <div class="flex gap-4 mt-6">
+            <a href="static/CV_Kevin_Olivella_ATS-ACT.pdf" download
+              class="border border-violet-500 text-violet-500 hover:bg-violet-50 px-6 py-2 rounded transition">
+              Descargar CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario -->
+        <div>
+          <h2 class="text-2xl font-bold text-violet-500 mb-4">Formulario de Contacto</h2>
+          <form id="basic-form" class="space-y-4" action="https://formsubmit.co/kevinolivella@gmail.com" method="POST">
+
+            <!-- Campos ocultos para evitar spam -->
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://portafoliokevinolivella.netlify.app/gracias.html">
+
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Nombre:</label>
+              <input type="text" id="name" name="name"
+                class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
+                required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Correo
+                Electrónico:</label>
+              <input type="email" id="email" name="email"
+                class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500 bg-white/80 text-gray-800"
+                required>
+            </div>
+            <div>
+              <label for="text" class="block text-sm font-medium text-gray-700">Observaciones:</label>
+              <textarea id="text" name="observaciones" rows="4"
+                class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500 text-black"
+                required></textarea>
+            </div>
+            <button type="submit"
+              class="cta-button bg-violet-500 hover:bg-violet-600 text-white px-6 py-2 rounded transition mt-4">
+              Enviar
+            </button>
+          </form>
+          <!-- Redes sociales debajo del formulario -->
+          <div class="flex gap-6 justify-center mt-8">
+            <a href="https://github.com/kevolive" target="_blank"
+              class="text-violet-600 text-2xl hover:text-violet-400">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kevin-alfonso-olivella-felizzola-0a7090288/" target="_blank"
+              class="text-violet-600 text-2xl hover:text-violet-400">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/kevin_oliv32656" target="_blank"
+              class="text-violet-600 text-2xl hover:text-violet-400">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="mailto:kevinolivella@gmail.com" target="_blank"
+              class="text-violet-600 text-2xl hover:text-violet-400" title="Gmail">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <hr>
+    <br>
+
+    <!-- Acerca de -->
+    <section id="acerca" class="p-8 bg-white text-black rounded-2xl border-black border mt-10">
+      <h2 class="text-3xl font-bold mb-4">Quién soy</h2>
+      <p class="mb-4 leading-relaxed">
+        Soy <span class="font-semibold">Kevin Olivella</span>, desarrollador de software con experiencia en
+        <span class="text-violet-700 font-semibold">Angular</span>,
+        <span class="text-violet-700 font-semibold">React</span>,
+        <span class="text-violet-700 font-semibold">JavaScript / TypeScript</span>,
+        <span class="text-violet-700 font-semibold">Python</span>,
+        <span class="text-violet-700 font-semibold">Java</span> y frameworks como
+        <span class="text-violet-700 font-semibold">Spring Boot</span> y
+        <span class="text-violet-700 font-semibold">NestJS</span>.
+        También cuento con experiencia en <span class="text-violet-700 font-semibold">bases de datos SQL</span>
+        como PostgreSQL, MySQL y SQL Server.
+      </p>
+
+      <p class="mb-4 leading-relaxed">
+        Me apasiona crear soluciones útiles y modernas que aporten valor real a las personas y a las empresas.
+        Además, he complementado mi formación con certificaciones en
+        <span class="text-violet-700 font-semibold">HTML, CSS, React, Angular y Scrum</span>.
+        Mi objetivo es seguir creciendo como profesional y contribuir a proyectos de impacto.
+      </p>
+
+
+      <div>
+        <a href="https://drive.google.com/drive/folders/1BCX1TCdU_814JyRr2tMZCzDjJL-7m0Ja?usp=sharing"
+          class="text-violet-600 text-xl hover:text-violet-400 font-bold">- <em>Ver mis
+            certificaciones</em></a>
+
+      </div>
+
+      <br>
+
+      <p class="mb-4 leading-relaxed">
+        Mi objetivo es seguir creciendo, contribuir a proyectos significativos y formar parte de equipos que
+        valoren el compromiso, la innovación y el aprendizaje continuo.
+      </p>
+      <div class="mt-10">
+        <h3 class="text-2xl font-semibold text-black mb-6">Mi recorrido</h3>
+        <ol class="relative border-l border-black">
+
+          <li class="mb-10 ml-6">
+            <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-black">2010 - 2015</time>
+            <h4 class="text-lg font-semibold text-black">Primer contacto con la tecnología</h4>
+            <p class="mb-4 text-black">Desde joven mostré interés por computadores y cómo funcionaban.</p>
+          </li>
+
+          <li class="mb-10 ml-6">
+            <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-black">2022 - 2024</time>
+            <h4 class="text-lg font-semibold text-black">Formación técnica</h4>
+            <p class="text-black">Estudié desarrollo de software con foco en lógica, programación y fundamentos web.</p>
+          </li>
+
+          <li class="mb-10 ml-6">
+            <div class="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-blue-900"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-black">2024 - Presente</time>
+            <h4 class="text-lg font-semibold text-black">Proyectos y portafolio</h4>
+            <p class="text-black">He desarrollado proyectos con Java, Angular, Spring Boot y TailwindCSS.</p>
+          </li>
+
+          <li class="ml-6">
+            <div class="absolute w-3 h-3 bg-violet-400 rounded-full -left-1.5 border border-white animate-pulse"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-black">Futuro cercano</time>
+            <h4 class="text-lg font-semibold text-black">Seguir aprendiendo y aportando</h4>
+          </li>
+
+        </ol>
+      </div>
+
+
+    </section>
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p class="text-sm">Created by: Kevin Olivella</p>
+    <p>© 2025 Kevin Olivella. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 
 </body>
 
