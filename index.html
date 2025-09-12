@@ -44,35 +44,43 @@
 
 
         <!-- Hero -->
-<section id="inicio" class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 bg-black text-white">
-    
-    <!-- Texto -->
-    <div class="flex-1 text-center md:text-left">
-        <p class="text-violet-300 uppercase font-semibold tracking-wider mb-4">¡Hola!</p>
-        <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Soy <span class="text-violet-400">Kevin Olivella</span>
-        </h2>
-        <p class="text-lg md:text-2xl text-gray-400 mb-8 max-w-lg">
-            Desarrollador de software apasionado por crear soluciones útiles y modernas.
-        </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <a href="#contacto" class="bg-violet-400 hover:bg-violet-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition">
-                Contáctame
-            </a>
-            <a href="#proyectos" class="border border-violet-300 text-violet-300 hover:bg-violet-400 hover:text-black px-6 py-3 rounded-full font-semibold transition">
-                Mis Proyectos
-            </a>
-        </div>
-    </div>
+        <!-- Hero -->
+        <section id="inicio"
+            class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 bg-black text-white">
 
-    <!-- Foto -->
-    <div class="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
-        <div class="w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
-            <img src="img/Mejor foto.png" alt="Kevin Olivella" class="w-full h-full object-cover">
-        </div>
-    </div>
+            <!-- Texto -->
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-violet-300 uppercase font-semibold tracking-wider mb-4">¡Hola!</p>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Soy <span class="text-violet-400">Kevin Olivella</span>
+                </h2>
+                <p class="text-lg md:text-2xl text-gray-400 mb-8 max-w-lg">
+                    Desarrollador de software apasionado por crear soluciones útiles y modernas.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contacto"
+                        class="bg-violet-400 hover:bg-violet-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition">
+                        Contáctame
+                    </a>
+                    <a href="#proyectos"
+                        class="border border-violet-300 text-violet-300 hover:bg-violet-400 hover:text-black px-6 py-3 rounded-full font-semibold transition">
+                        Mis Proyectos
+                    </a>
+                </div>
+            </div>
 
-</section>
+            <!-- Foto -->
+            <div class="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+                <div class="w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="img/Mejor foto.png" alt="Kevin Olivella" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
         <br>
         <hr>
         <br>
@@ -104,8 +112,35 @@
 
 
         <!-- Tarjetas de proyectos -->
-        <section class="grid gap-6 from-gray-950 to-gray-700 sm:grid-cols-2 lg:grid-cols-4">
+        <section class="grid md:grid-cols-3 gap-6 from-gray-950 to-gray-700">
 
+            <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                data-aos="zoom-in" data-aos-delay="150">
+                <div>
+                    <img src="img/imagen Nexus.png" alt="Captura-Tienda Virtual" class="p-6 mb-4">
+                    <h4 class="text-xl font-bold text-violet-300 mb-2">Nexus</h4>
+                    <p class="text-gray-300 text-sm mb-4">
+                        API multipropósito en desarrollo, construida con NestJS y TypeScript. Está diseñada para
+                        centralizar
+                        diversas funcionalidades backend. Conecta con una aplicación de gestión de clientes en Angular,
+                        integra
+                        WhatsApp Business para el envío de mensajes, y utiliza Prisma ORM para una gestión de base de
+                        datos robusta.
+                        Actualmente en construcción, con planes de expansión para incluir un módulo de facturación
+                        electrónica.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 mt-4">
+                    <!-- <a href="https://tiendavirtualprueba.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow">
+                        Ver más -->
+                    </a>
+                    <a href="https://github.com/Kevolive/nexus.git" target="_blank"
+                        class=" text-3xl hover:text-white-400">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
             <!-- Tienda Virtual -->
             <div class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
                 data-aos="zoom-in" data-aos-delay="150">
@@ -119,7 +154,7 @@
                         consultar un historial de transacciones. El frontend está construido con React + Vite +
                         Tailwind, y el backend con NestJS + PostgreSQL, con pruebas automatizadas y despliegue en Render
                         y Vercel.
-                        Debido a que usé Render para el despliegue del backend en la V gratis, es importante
+                        Debido a que usé Renderpara el despliegue del backend en la V gratis, es importante
                         "despertarlo" para que carguenlos registros. Acá está la URL del backend:
                         https://wompi-backend-y2qy.onrender.com. El diseño totalmente responsive, validaciones visuales,
                         y flujo completo de compra.
@@ -316,8 +351,7 @@
                 data-aos="zoom-in" data-aos-delay="150">
                 <div>
                     <img src="" alt="imagen" class="p-6 mb-4">
-                    <h4 class="text-xl font-bold text-violet-300 mb-2">Debora Sanabria Hair(Proyecto en construcción:)
-                    </h4>
+                    <h4 class="text-xl font-bold text-violet-300 mb-2">Proyecto en construcción:</h4>
                     <p class="text-gray-300 text-sm mb-4">
                         Plataforma de registro de clientes con envío de notificaciones por WhatsApp. Desarrollada con
                         Angular, Nestjs y Twilio (por ahora para pruebas). Permite registrar clientes, enviar
@@ -355,7 +389,7 @@
                     <p class="text-gray-600 mb-4">¿Quieres colaborar o tienes una propuesta? Acá tienes mi CV; también
                         llena los campos del formulario y te contactaré pronto.</p>
                     <div class="flex gap-4 mt-6">
-                        <a href="static/CV_Kevin_Olivela_Act.pdf" download
+                        <a href="static/CV_Kevin_Olivella_ATS-ACT.pdf" download
                             class="border border-violet-500 text-violet-500 hover:bg-violet-50 px-6 py-2 rounded transition">
                             Descargar CV
                         </a>

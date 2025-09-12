@@ -44,36 +44,39 @@
 
 
     <!-- Hero -->
-<!-- Hero -->
-<section id="inicio" class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 bg-black text-white">
-    
-    <!-- Texto -->
-    <div class="flex-1 text-center md:text-left">
+    <!-- Hero -->
+    <section id="inicio"
+      class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 bg-black text-white">
+
+      <!-- Texto -->
+      <div class="flex-1 text-center md:text-left">
         <p class="text-violet-300 uppercase font-semibold tracking-wider mb-4">¡Hola!</p>
         <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Soy <span class="text-violet-400">Kevin Olivella</span>
+          Soy <span class="text-violet-400">Kevin Olivella</span>
         </h2>
         <p class="text-lg md:text-2xl text-gray-400 mb-8 max-w-lg">
-            Desarrollador de software apasionado por crear soluciones útiles y modernas.
+          Desarrollador de software apasionado por crear soluciones útiles y modernas.
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <a href="#contacto" class="bg-violet-400 hover:bg-violet-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition">
-                Contáctame
-            </a>
-            <a href="#proyectos" class="border border-violet-300 text-violet-300 hover:bg-violet-400 hover:text-black px-6 py-3 rounded-full font-semibold transition">
-                Mis Proyectos
-            </a>
+          <a href="#contacto"
+            class="bg-violet-400 hover:bg-violet-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition">
+            Contáctame
+          </a>
+          <a href="#proyectos"
+            class="border border-violet-300 text-violet-300 hover:bg-violet-400 hover:text-black px-6 py-3 rounded-full font-semibold transition">
+            Mis Proyectos
+          </a>
         </div>
-    </div>
+      </div>
 
-    <!-- Foto -->
-    <div class="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+      <!-- Foto -->
+      <div class="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
         <div class="w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
-            <img src="img/Mejor foto.png" alt="Kevin Olivella" class="w-full h-full object-cover">
+          <img src="img/Mejor foto.png" alt="Kevin Olivella" class="w-full h-full object-cover">
         </div>
-    </div>
+      </div>
 
-</section>
+    </section>
 
 
 
@@ -111,6 +114,29 @@
     <!-- Tarjetas de proyectos -->
     <section class="grid md:grid-cols-3 gap-6 from-gray-950 to-gray-700">
 
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+        data-aos="zoom-in" data-aos-delay="150">
+        <div>
+          <img src="img/imagen Nexus.png" alt="Captura-Tienda Virtual" class="p-6 mb-4">
+          <h4 class="text-xl font-bold text-violet-300 mb-2">Nexus</h4>
+          <p class="text-gray-300 text-sm mb-4">
+            API multipropósito en desarrollo, construida con NestJS y TypeScript. Está diseñada para centralizar
+            diversas funcionalidades backend. Conecta con una aplicación de gestión de clientes en Angular, integra
+            WhatsApp Business para el envío de mensajes, y utiliza Prisma ORM para una gestión de base de datos robusta.
+            Actualmente en construcción, con planes de expansión para incluir un módulo de facturación electrónica.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-4">
+          <!-- <a href="https://tiendavirtualprueba.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow">
+                        Ver más -->
+          </a>
+          <a href="https://github.com/Kevolive/nexus.git" target="_blank" class=" text-3xl hover:text-white-400">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
       <!-- Tienda Virtual -->
       <div
         class="backdrop-blur-sm bg-white/5 border border-white/10 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
@@ -162,12 +188,12 @@
           <a href="https://mapsangularkevin.netlify.app/#/fullscreen" target="_blank"
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
             más</a>
-            <a href="https://github.com/Kevolive/Maps.git" target="_blank"
+          <a href="https://github.com/Kevolive/Maps.git" target="_blank"
             class=" inline-block text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
 
-        
+
       </div>
 
       <!-- App_Paises -->
@@ -185,12 +211,11 @@
         </div>
 
         <div class="flex items-center gap-4 mt-4">
-          
+
           <a href="https://angularappcountry.netlify.app/" target="_blank"
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
             más</a>
-            <a href="https://github.com/Kevolive/App_Paises.git" target="_blank"
-            class="  text-3xl hover:text-white-400">
+          <a href="https://github.com/Kevolive/App_Paises.git" target="_blank" class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
       </div>
@@ -210,11 +235,11 @@
         </div>
 
         <div class="flex items-center gap-4 mt-4">
-          
+
           <a href="https://angularappusuarios.netlify.app/inicio" target="_blank"
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow self-start mt-4">Ver
             más</a>
-            <a href="https://github.com/Kevolive/CrudAngularMaterial.git" target="_blank"
+          <a href="https://github.com/Kevolive/CrudAngularMaterial.git" target="_blank"
             class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
@@ -236,11 +261,11 @@
         </div>
 
         <div class="flex items-center gap-4 mt-4">
-          
+
           <a href="https://crudappusuarios.netlify.app/usuarios" target="_blank"
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
             más</a>
-            <a href="https://github.com/Kevolive/CrudAngularPrimeNG.git" target="_blank"
+          <a href="https://github.com/Kevolive/CrudAngularPrimeNG.git" target="_blank"
             class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
@@ -263,11 +288,11 @@
           </p>
         </div>
         <div class="flex items-center gap-4 mt-4">
-          
+
           <a href="https://proyecto-integrador-kg2mw7iqyygdvz94pysrmv.streamlit.app/" target="_blank"
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
             más</a>
-            <a href="https://github.com/Kevolive/proyecto-integrador.git" target="_blank"
+          <a href="https://github.com/Kevolive/proyecto-integrador.git" target="_blank"
             class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
@@ -310,9 +335,8 @@
             class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">
             Ver más
           </a>
-          
-            <a href="https://github.com/Kevolive/web_course.git" target="_blank"
-            class="  text-3xl hover:text-white-400">
+
+          <a href="https://github.com/Kevolive/web_course.git" target="_blank" class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
       </div>
@@ -340,13 +364,13 @@
             desplegada en Render y netlyfy.
           </p>
         </div>
-        
+
         <div class="flex items-center gap-4 mt-4">
-            <a href="https://deborasanabriahair.netlify.app/clientes/create" target="_blank"
-              class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
-              más</a>
-          
-            <a href="https://github.com/Kevolive/Debora_Hair_CRUD.git" target="_blank"
+          <a href="https://deborasanabriahair.netlify.app/clientes/create" target="_blank"
+            class="inline-block px-4 py-2 text-sm bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition duration-200 shadow ">Ver
+            más</a>
+
+          <a href="https://github.com/Kevolive/Debora_Hair_CRUD.git" target="_blank"
             class="  text-3xl hover:text-white-400">
             <i class="fab fa-github"></i></a>
         </div>
